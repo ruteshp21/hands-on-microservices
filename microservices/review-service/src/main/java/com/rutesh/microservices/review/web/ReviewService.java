@@ -12,7 +12,7 @@ public class ReviewService implements IReviewService {
 
     @Override
     public List<Review> getReviews(int productId) {
-        Review review = new Review(1,productId,"Peterson","12 Rules", "12 Rules content");
+        Review review = new Review(productId,1,"Peterson","12 Rules", "12 Rules content");
         List<Review> reviewList = new ArrayList<>();
         reviewList.add(review);
         return reviewList;

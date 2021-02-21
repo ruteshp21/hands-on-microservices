@@ -12,7 +12,7 @@ public class RecommendationService implements IRecommendationService {
 
     @Override
     public List<Recommendation> getRecommendations(int productId) {
-        Recommendation recommendation = new Recommendation(1,productId,"Jordan",5,"Abc product content");
+        Recommendation recommendation = new Recommendation(productId,1,"Jordan",5,"Abc product content");
         List<Recommendation> recommendationList = new ArrayList<>();
         recommendationList.add(recommendation);
         return recommendationList;
