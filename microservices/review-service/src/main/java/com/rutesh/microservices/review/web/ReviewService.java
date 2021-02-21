@@ -1,0 +1,19 @@
+package com.rutesh.microservices.review.web;
+
+import com.rutesh.microservices.api.core.review.IReviewService;
+import com.rutesh.microservices.api.core.review.Review;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ReviewService implements IReviewService {
+
+    @Override
+    public List<Review> getReviews(int productId) {
+        Review review = new Review(1,productId,"Peterson","12 Rules", "12 Rules content");
+        List<Review> reviewList = new ArrayList<>();
+        reviewList.add(review);
+        return reviewList;
+    }
+
+}
