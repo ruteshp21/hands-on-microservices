@@ -2,10 +2,12 @@ package com.rutesh.microservices.review.web;
 
 import com.rutesh.microservices.api.core.review.IReviewService;
 import com.rutesh.microservices.api.core.review.Review;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@RestController
 public class ReviewService implements IReviewService {
 
     @Override
